@@ -1,4 +1,7 @@
 {# templates/register.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
 
 {{ form_start(form) }}
     {{ form_row(form.fullName) }}
@@ -9,3 +12,5 @@
 
     <button type="submit">S'inscrire !</button>
 {{ form_end(form) }}
+
+{% endblock %}
